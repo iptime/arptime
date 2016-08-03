@@ -1,0 +1,38 @@
+<div id="auth" class="cc_padding">
+  <form id="local_auth_form">
+    <div class="lc_row_r">
+	  <div class="lc_left_r">
+	    <div class="auth_radio_run">
+        <input name="http_auth" id="httpauth_false" sid="C_LOGIN_HTTPAUTH" type="radio" value="0">
+        <label for="httpauth_false"><p sid="S_LOGIN_BASIC_HTTPAUTH"></p></label>
+        </div>
+	  </div>
+	  <div class="lc_right_r"><p style="line-height: 2.5em; margin-left: 0.5em;" sid="S_LOGIN_BASICDESC"></p></div>
+    </div>
+	<div class="lc_row_r">
+	  <div class="lc_left_r">
+	    <div class="auth_radio_run">
+		<input name="http_auth" id="httpauth_true" sid="C_LOGIN_HTTPAUTH" type="radio" value="1">
+        <label for="httpauth_true"><p sid="S_LOGIN_SESSION_HTTPAUTH"></p></label>
+        </div>
+	  </div>
+	  <div class="lc_right_r ui-alt-icon">
+		<input name="use_captcha" sid="C_LOGIN_USECAPTCHA" id="usecaptcha_check" type="checkbox" value="1">
+        <label style="height: 1.5em;" for="usecaptcha_check"><p style="margin-left: 3em;" sid="S_PWSHOW">로그인시 captcha 입력</p></label>
+	  </div>
+    </div>
+	<div class="lc_row_r">
+	  <div class="lc_left_r"><p></p>　</div>
+	  <div class="lc_right_r">
+		<div style="float: left; width: 3em; margin-left: 0.5em;"><input name="http_session_timeout" sid="C_LOGIN_TIMEOUT" type="number" pattern="[0-9]*" min = "1"></div>
+		<div style="float: left; width: 12em;"><p style="line-height: 2em; margin-left: 0.5em;" sid="S_LOGIN_TIMEOUTDESC"></p></div></div>
+    </div>
+  </form>
+  <div id="right_footer" class="right_footer">
+     <div class="footer_item">
+	   <button class="lc_button" type="button" sid="LOGIN_SUBMIT" data-role="none">
+	     <span sid="S_BUTTON_SUBMIT"></span>
+	   </button>
+     </div>
+   </div>
+</div>

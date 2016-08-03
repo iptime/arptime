@@ -1,0 +1,159 @@
+@charset "utf-8";
+#service_page :not(INPUT):not(TEXTAREA) {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.ui-overlay-a, .ui-page-theme-a { background-color: #FFF; }
+hr {
+        border:none;
+        background-color: #DDD;
+        text-align:left;
+        clear: both;
+}
+#header {
+        background-color: #dce1cd;
+        border: 1px solid #ccc;
+}
+#header hr {
+        border: 1px solid #ccc;
+        clear: both;
+	margin-bottom:.2em;
+}
+.listview { clear: both; }
+.listview a { padding: 0px; background-color: #F6F6F6; }
+.listview p {
+        display: block !important;
+        text-overflow: ellipsis !important;
+        overflow: hidden !important;
+        white-space: nowrap !important;
+        text-shadow: none;
+        font-style: normal;
+        font-family: "돋움", "Arial Unicode MS";
+        color: #444;
+        font-size: inherit !important;
+}
+.ui-page-theme-a .ui-btn.ui-btn-active { background-color: #F6F6F6; border-color: #DDD;}
+.ui-page-theme-a .ui-btn:focus { box-shadow: none; }
+
+.listview .line_title { float: left; }
+.listview .line_title p {
+        padding-left: 0.3em;
+        line-height: 2em;
+}
+.listview .line_status { float: right; display: table; }
+.listview .line_status p { line-height: 2em; }
+.listview .line_status span { display: table-cell;      vertical-align: middle; }
+.listview .line_status img {
+        height: 1em;
+        width: 1em;
+        padding-top: 0.3em;
+        padding-right: 0.3em;
+}
+.listview .line_value { clear: both; height: 1.5em; }
+.listview .line_value p { padding-left: 0.3em; color: #888; }
+#right_main, #right_sub {
+        clear: both;
+        margin-bottom: 10px;
+        overflow: auto;
+}
+.lc_left {
+        display: table;
+        float: left;
+        line-height: 2.5em;
+        height: 2.5em;
+        margin-top: 2px;
+        width: 7.5em;
+}
+
+#right_main .lc_left span {
+        display: table-cell;
+        vertical-align: middle;
+        width: 0.7em;
+}
+#right_main .lc_left span img {
+        height: 5px;
+        width: 5px;
+        margin-bottom: 0.2em;
+}
+#right_main .lc_row { clear: both; overflow : hidden; }
+
+.lc_right {
+        float: left;
+        width: 16.5em;
+        overflow: hidden;
+}
+.lc_right_ipdisk { width: 16em; }
+
+#right_main .value p { width: 50px; }
+#right_main #desc p,
+#right_sub #desc p { color: #777; line-height: 1.5em; }
+#right_sub #desc .title { margin-bottom: 5px; }
+
+.custom_css_button {
+        height: 2.5em;
+	width : 100%;
+}
+
+/*local css*/
+#maincontent .lc_line_div { overflow:hidden; height : 1.7em;}
+#maincontent .lc_grayfont_text {color:#777; text-overflow:ellipsis; white-space:nowrap;}
+
+
+#lc_status_div .lc_tablerow_div:nth-child(odd),
+#lc_stat_div .lc_tablecolumn_div >div:nth-child(even) { background-color : #FFFFFF;}
+#lc_status_div .lc_tablerow_div:nth-child(even),
+#lc_stat_div .lc_tablecolumn_div >div:nth-child(odd) { background-color : #F9FAF5;}
+#lc_stat_div .lc_tablecolumn_div >div:first-child { background-color : #EEF1E6;}
+
+#maincontent .lc_contents_div .lc_tablerow_div >.lc_portdata_div:first-child { width : 7em;}
+
+#maincontent .lc_table1_div .lc_title_div,
+#maincontent .lc_table1_div .lc_button_div,
+#maincontent .lc_table2_div .lc_button_div{ background-color : #EEF1E6; min-height : 3em; padding-left : 0.5em;}
+
+#maincontent .lc_table2_div .lc_title_div { background-color : #EEF1E6; min-height : 2.5em;}
+#maincontent .lc_table2_div .lc_title_div >div:first-child { padding-left : 0.5em; height : 2.5em;}
+#maincontent .lc_table2_div .lc_title_div >div:first-child p { font-size : 1.25em;}
+
+#maincontent .lc_table1_div .lc_tablerow_div { padding-left : 0.5em;}
+
+#maincontent .lc_table1_div .lc_cell_div { display:inline-block; width : 22%; float : right;}
+#maincontent .lc_table1_div .lc_cell_div:first-child { width : 25%; float : left;}
+#maincontent .lc_table1_div .lc_contents_div .lc_cell_div:first-child{ padding-top : 0.4em;}
+#maincontent .lc_table1_div .lc_contents_div .lc_cell_div:first-child img { padding-top : 0.2em;}
+#maincontent .lc_table1_div .lc_cell_div:nth-child(2) { padding-right : 2em;}
+#maincontent .lc_table1_div .lc_tablerow_div { height : 2.5em;}
+#maincontent .lc_table1_div .lc_title_div p { padding-top : 0.8em; text-align : center;}
+#maincontent .lc_table1_div .lc_title_div >div:first-child p { text-align : left;}
+#maincontent .lc_table1_div .lc_contents_div .lc_tablerow_div .lc_column1_div img { width : 1.3em;}
+#maincontent .lc_table1_div .lc_contents_div .lc_tablerow_div .lc_column1_div img,
+#maincontent .lc_table1_div .lc_contents_div .lc_tablerow_div .lc_column1_div p:nth-child(2) { float : left; padding-bottom : 0.5em; padding-left : 0.5em; }
+#maincontent .lc_table1_div .lc_contents_div .lc_tablerow_div .lc_column1_div p:last-child { float : left;}
+#maincontent .lc_table1_div .lc_contents_div .lc_select_div { width : 95%; padding-top : 0.2em; float : right;}
+#maincontent .lc_table1_div .lc_contents_div >.lc_tablerow_div >.lc_cell_div >div:last-child { text-align : center; padding-top : 0.8em; padding-right : 0.7em;}
+#maincontent .lc_table1_div .lc_button_div { overflow : hidden; border-style : solid; border-width : 0 0 1px 0; border-color : #ccc;}
+#maincontent .lc_button_div >div { float : right; margin-right : 2em; padding-top : 0.25em;}
+
+#maincontent .lc_table2_div { white-space : nowrap; overflow-x : scroll; overflow-y : hidden; font-size : 0.8em;}
+#maincontent .lc_table2_div .lc_contents_div { min-width : 100%;}
+//#maincontent .lc_table2_div .lc_contents_div { overflow-x : scroll; overflow-y : hidden; white-space : nowrap;}
+#maincontent .lc_table2_div .lc_tablecolumn_div:first-child { position : absolute; z-index : 2; background-color : inherit; min-width : 8em}
+#maincontent .lc_table2_div .lc_tablecolumn_div:first-child >div { padding-left : 0.5em;}
+#maincontent .lc_table2_div .lc_tablecolumn_div { float : left; min-width : 6em; position : relative; z-index : 1; display : inline-block;}
+#maincontent .lc_table2_div .lc_tablecolumn_div:nth-child(2) { padding-left : 8em;}
+#maincontent .lc_table2_div .lc_tablecolumn_div:last-child { position : absolute; width : 100% !important; z-index : 0;}
+#lc_stat_div .lc_tablecolumn_div >div { padding-left : 0.5em;}
+//#lc_stat_div .lc_tablecolumn_div >div:first-child >div:first-child { display : none;}
+#maincontent .lc_table2_div .lc_tablecolumn_div >div:first-child >div:first-child { height : 2em; font-size : 1.25em;}
+#lc_stat_div .lc_tablecolumn_div:first-child >div:first-child >div:first-child p { padding-top : 0.3em;}
+.disabled_select::after { opacity:0.3;}
+.disabled_select { background-color : #FDFDFD !important;}
+
+.lc_button_div { height : 3em;}
+#maincontent .lc_table1_div .lc_submit_button_div { width : 6.5em;}
+#maincontent >.lc_button_div .lc_submit_button_div { width : 8em}
+
+.lc_table2_div .lc_title_div p { padding-top : 0.5em;}
